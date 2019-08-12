@@ -1,0 +1,17 @@
+<h1> This is the book listing page</h1>
+<p class='container'>
+    <% book_list.forEach(function(value, index){ %>
+        <p><div style="color: blue;display: inline;cursor: pointer;"><%= value.title %></div> author:- <%= value.author.first_name %></p>
+    <% }) %>
+</p>
+<br><br>
+<style>
+    .container{
+        width: 80%;
+        position: relative;
+        display: block;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+</style>
